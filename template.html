@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{doc.title}}</title>
+<meta name="description" content="{{doc.desc}}">
+<link rel="canonical" href="{{CANONICAL}}">
+{{HREFLANG}}
+<meta name="theme-color" content="#0d0a0b">
+<meta name="format-detection" content="telephone=yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d0a0b'/%3E%3Cpath d='M22 14h20l-2 12a8 8 0 0 1-16 0z' fill='%23a51e35'/%3E%3Cpath d='M32 34v12M24 47h16' stroke='%23e8dfd2' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="{{doc.title}}">
+<meta property="og:description" content="{{doc.desc}}">
+<meta property="og:image" content="{{SITE}}/images/hero.jpg">
+<meta property="og:url" content="{{CANONICAL}}">
+<meta property="og:locale" content="{{OGLOCALE}}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="{{A}}styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">{{a11y.skip}}</a>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="Merlot Wine&amp;Dine">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 3h11l-1.1 7.2a4.5 4.5 0 0 1-8.8 0z" fill="currentColor"/><path d="M12 14.5V20M8.6 20.5h6.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">Merlot</span>
+        <span class="brand__sub">Wine &amp; Dine</span>
+      </span>
+    </a>
+
+    <nav class="nav__links" aria-label="Main">
+      <a href="#about">{{nav.about}}</a>
+      <a href="#wine">{{nav.wine}}</a>
+      <a href="#kitchen">{{nav.kitchen}}</a>
+      <a href="#evenings">{{nav.evenings}}</a>
+      <a href="#reviews">{{nav.reviews}}</a>
+      <a href="#visit">{{nav.visit}}</a>
+    </nav>
+
+    <div class="nav__right">
+      <div class="langs" role="group" aria-label="Language">
+{{LANGSW}}
+      </div>
+      <a class="btn btn--primary nav__cta" href="tel:+994512444991">{{cta.reserve}}</a>
+      <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="mobilenav" aria-label="Menu">
+        <i class="ph-light ph-list" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+  <div class="mobilenav" id="mobilenav" hidden>
+    <nav class="mobilenav__links" aria-label="Mobile">
+      <a href="#about"><span>{{nav.about}}</span><i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+      <a href="#wine"><span>{{nav.wine}}</span><i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+      <a href="#kitchen"><span>{{nav.kitchen}}</span><i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+      <a href="#evenings"><span>{{nav.evenings}}</span><i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+      <a href="#reviews"><span>{{nav.reviews}}</span><i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+      <a href="#visit"><span>{{nav.visit}}</span><i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+    </nav>
+    <div class="mobilenav__foot">
+      <a class="btn btn--primary btn--block" href="tel:+994512444991">
+        <i class="ph-light ph-phone-call" aria-hidden="true"></i>
+        <span>{{cta.reserve}}</span>
+      </a>
+      <a class="btn btn--ghost btn--block" href="https://www.instagram.com/merlot_winedine_/" target="_blank" rel="noopener">
+        <i class="ph-light ph-instagram-logo" aria-hidden="true"></i>
+        <span>{{cta.insta}}</span>
+      </a>
+      <p class="mobilenav__phone">051 244 49 91 · {{visit.hoursVal}} 08:00 – 00:00</p>
+    </div>
+  </div>
+
+<main id="main">
+
+  <!-- HERO. Все снимки заведения тёмные, поэтому тема сайта тоже тёмная:
+       на чёрном фоне фотографии светятся, а не выглядят вырезанными. -->
+  <section class="hero" id="top">
+    <figure class="hero__media shot" data-ph="images/hero.jpg">
+      <img src="{{A}}images/hero.jpg" alt="{{alt.hero}}" loading="eager" fetchpriority="high" decoding="async" width="1080" height="1080">
+    </figure>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="hero__eyebrow">{{hero.eyebrow}}</p>
+        <h1 class="hero__title">{{hero.title}}</h1>
+        <p class="hero__sub">{{hero.sub}}</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="tel:+994512444991">
+            <i class="ph-light ph-phone-call" aria-hidden="true"></i>
+            <span>{{cta.reserve}}</span>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#kitchen">
+            <span>{{cta.kitchen}}</span>
+            <i class="ph-light ph-arrow-down-right" aria-hidden="true"></i>
+          </a>
+        </div>
+        <p class="hero__badge">
+          <i class="ph-light ph-clock" aria-hidden="true"></i>
+          <span>{{hero.badge}}</span>
+        </p>
+      </div>
+
+      <a class="hero__scroll" href="#about">
+        <span>{{hero.scroll}}</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about__grid">
+      <div class="about__text reveal">
+        <p class="eyebrow">{{about.eyebrow}}</p>
+        <h2 class="h2">{{about.title}}</h2>
+        <p class="lead">{{about.p1}}</p>
+        <p class="body">{{about.p2}}</p>
+
+        <dl class="keys">
+          <div class="keys__item">
+            <dt class="keys__n">{{about.k1n}}</dt>
+            <dd class="keys__t">{{about.k1t}}</dd>
+          </div>
+          <div class="keys__item">
+            <dt class="keys__n">{{about.k2n}} <i class="ph-fill ph-star" aria-hidden="true"></i></dt>
+            <dd class="keys__t">{{about.k2t}}</dd>
+          </div>
+          <div class="keys__item">
+            <dt class="keys__n">{{about.k3n}}</dt>
+            <dd class="keys__t">{{about.k3t}}</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="about__media reveal">
+        <figure class="about__shot shot" data-ph="images/room.jpg">
+          <img src="{{A}}images/room.jpg" alt="{{alt.room}}" loading="lazy" decoding="async" width="1080" height="810">
+          <figcaption class="shot__cap shot__cap--top">{{about.cap1}}</figcaption>
+        </figure>
+        <figure class="about__shot about__shot--small shot" data-ph="images/arch.jpg">
+          <img src="{{A}}images/arch.jpg" alt="{{alt.arch}}" loading="lazy" decoding="async" width="900" height="1200">
+          <figcaption class="shot__cap">{{about.cap2}}</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- WINE -->
+  <section class="wine" id="wine">
+    <div class="wrap wine__grid">
+      <figure class="wine__shot shot reveal" data-ph="images/wine.jpg">
+        <img src="{{A}}images/wine.jpg" alt="{{alt.wine}}" loading="lazy" decoding="async" width="512" height="640">
+        <figcaption class="shot__cap">{{wine.cap}}</figcaption>
+      </figure>
+
+      <div class="wine__text reveal">
+        <p class="eyebrow">{{wine.eyebrow}}</p>
+        <h2 class="h2">{{wine.title}}</h2>
+        <ul class="pours" aria-hidden="true">
+          <li class="pour pour--red"></li>
+          <li class="pour pour--white"></li>
+          <li class="pour pour--rose"></li>
+        </ul>
+        <p class="lead">{{wine.p1}}</p>
+        <p class="body">{{wine.p2}}</p>
+        <a class="link" href="#visit">
+          <span>{{cta.reserve}}</span>
+          <i class="ph-light ph-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KITCHEN : витрина. Полного меню онлайн у ресторана нет, поэтому
+       здесь несколько блюд, а за остальным — в зал или в инстаграм. -->
+  <section class="kitchen" id="kitchen">
+    <div class="wrap">
+      <div class="kitchen__head reveal">
+        <div>
+          <p class="eyebrow">{{kit.eyebrow}}</p>
+          <h2 class="h2">{{kit.title}}</h2>
+        </div>
+        <p class="body kitchen__lead">{{kit.lead}}</p>
+      </div>
+
+{{PEEK}}
+
+      <div class="kitchen__actions reveal">
+        <a class="btn btn--primary btn--lg" href="https://www.instagram.com/merlot_winedine_/" target="_blank" rel="noopener">
+          <i class="ph-light ph-instagram-logo" aria-hidden="true"></i>
+          <span>{{cta.insta}}</span>
+          <i class="ph-light ph-arrow-up-right" aria-hidden="true"></i>
+        </a>
+        <a class="btn btn--ghost btn--lg" href="tel:+994512444991">
+          <i class="ph-light ph-phone-call" aria-hidden="true"></i>
+          <span>{{cta.reserve}}</span>
+        </a>
+      </div>
+      <p class="kitchen__note reveal">{{kit.note}}</p>
+    </div>
+  </section>
+
+  <!-- EVENINGS -->
+  <section class="evenings" id="evenings">
+    <div class="wrap">
+      <div class="evenings__head reveal">
+        <p class="eyebrow">{{eve.eyebrow}}</p>
+        <h2 class="h2">{{eve.title}}</h2>
+        <p class="body evenings__lead">{{eve.p1}}</p>
+      </div>
+
+      <div class="strip">
+        <figure class="strip__shot shot reveal" data-ph="images/music.jpg">
+          <img src="{{A}}images/music.jpg" alt="{{alt.music}}" loading="lazy" decoding="async" width="360" height="640">
+          <figcaption class="shot__cap">{{eve.cap1}}</figcaption>
+        </figure>
+        <figure class="strip__shot shot reveal" data-ph="images/bar.jpg">
+          <img src="{{A}}images/bar.jpg" alt="{{alt.bar}}" loading="lazy" decoding="async" width="360" height="640">
+          <figcaption class="shot__cap">{{eve.cap2}}</figcaption>
+        </figure>
+        <figure class="strip__shot shot reveal" data-ph="images/chef.jpg">
+          <img src="{{A}}images/chef.jpg" alt="{{alt.chef}}" loading="lazy" decoding="async" width="512" height="640">
+          <figcaption class="shot__cap">{{eve.cap3}}</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS. Цитаты стоят так, как их написали гости, — на всех трёх
+       языковых версиях одинаково. Переводить чужой отзыв нечестно. -->
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <div class="reviews__head reveal">
+        <p class="eyebrow">{{rev.eyebrow}}</p>
+        <h2 class="h2">{{rev.title}}</h2>
+        <p class="body">{{rev.sub}}</p>
+      </div>
+
+      <div class="reviews__grid">
+        <blockquote class="quote quote--lead reveal">
+          <p class="quote__body">Шикарное место! Очень вкусно готовят, выбирайте домашнее вино, есть белое, красное, розовое, все вкусные и точно останетесь довольны! Демократичный ценник, уютная обстановка, очень приветливый персонал.</p>
+          <footer class="quote__by">
+            <span class="quote__name">RAVIL SHAFIKOV</span>
+            <span class="quote__meta"><i class="ph-fill ph-star" aria-hidden="true"></i> {{rev.score}} <span>{{rev.source}}</span></span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="quote reveal">
+          <p class="quote__body">Очень понравился этот винный ресторан: современный ремонт, большой выбор азербайджанского вина, хорошо приготовленные блюда, приятные официанты.</p>
+          <footer class="quote__by">
+            <span class="quote__name">Svetlana</span>
+            <span class="quote__meta"><i class="ph-fill ph-star" aria-hidden="true"></i> {{rev.score}} <span>{{rev.source}}</span></span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="quote reveal">
+          <p class="quote__body">Приятное место для вечернего досуга. Спокойная атмосфера, обходительный персонал. Захожу к ним на кофе и бокал вина.</p>
+          <footer class="quote__by">
+            <span class="quote__name">Alexander Bezruchenkov</span>
+            <span class="quote__meta"><i class="ph-fill ph-star" aria-hidden="true"></i> {{rev.score}} <span>{{rev.source}}</span></span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="quote reveal">
+          <p class="quote__body">Великолепное соотношение цены и качества! Отличное место, где вкусно и вино по честной цене!</p>
+          <footer class="quote__by">
+            <span class="quote__name">Владислав Шипунов</span>
+            <span class="quote__meta"><i class="ph-fill ph-star" aria-hidden="true"></i> {{rev.score}} <span>{{rev.source}}</span></span>
+          </footer>
+        </blockquote>
+      </div>
+
+      <a class="link reveal" href="https://maps.google.com/?cid=10680266729376901899" target="_blank" rel="noopener">
+        <span>{{rev.all}}</span>
+        <i class="ph-light ph-arrow-up-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="wrap visit__grid">
+      <div class="visit__info reveal">
+        <p class="eyebrow">{{visit.eyebrow}}</p>
+        <h2 class="h2">{{visit.title}}</h2>
+
+        <dl class="info">
+          <div class="info__row">
+            <dt><i class="ph-light ph-clock" aria-hidden="true"></i><span>{{visit.hoursLbl}}</span></dt>
+            <dd>{{visit.hoursVal}} · 08:00 – 00:00</dd>
+          </div>
+          <div class="info__row">
+            <dt><i class="ph-light ph-phone" aria-hidden="true"></i><span>{{visit.phoneLbl}}</span></dt>
+            <dd><a href="tel:+994512444991">051 244 49 91</a></dd>
+          </div>
+          <div class="info__row">
+            <dt><i class="ph-light ph-phone-call" aria-hidden="true"></i><span>{{visit.phone2Lbl}}</span></dt>
+            <dd><a href="tel:+994123101576">012 310 15 76</a></dd>
+          </div>
+          <div class="info__row">
+            <dt><i class="ph-light ph-map-pin" aria-hidden="true"></i><span>{{visit.addrLbl}}</span></dt>
+            <dd>Bəşir Səfəroğlu küç. 161</dd>
+          </div>
+          <div class="info__row">
+            <dt><i class="ph-light ph-wine" aria-hidden="true"></i><span>{{visit.checkLbl}}</span></dt>
+            <dd>{{visit.checkVal}}</dd>
+          </div>
+        </dl>
+
+        <ul class="chips">
+          <li class="chip"><i class="ph-light ph-fork-knife" aria-hidden="true"></i><span>{{visit.s1}}</span></li>
+          <li class="chip"><i class="ph-light ph-bag" aria-hidden="true"></i><span>{{visit.s2}}</span></li>
+          <li class="chip"><i class="ph-light ph-coffee" aria-hidden="true"></i><span>{{visit.s3}}</span></li>
+        </ul>
+
+        <div class="visit__actions">
+          <a class="btn btn--primary btn--lg" href="tel:+994512444991">
+            <i class="ph-light ph-phone-call" aria-hidden="true"></i>
+            <span>{{cta.reserve}}</span>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="https://www.google.com/maps/dir/?api=1&amp;destination=Merlot%20Wine%26Dine%2C%20B%C9%99%C5%9Fir%20S%C9%99f%C9%99ro%C4%9Flu%20161%2C%20Baku" target="_blank" rel="noopener">
+            <span>{{cta.route}}</span>
+            <i class="ph-light ph-arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="visit__map reveal" id="map">
+        <button type="button" class="map__guard" id="mapGuard">
+          <span class="map__guard-pill">
+            <i class="ph-light ph-hand-tap" aria-hidden="true"></i>
+            <span>{{visit.mapTap}}</span>
+          </span>
+        </button>
+        <iframe
+          title="Merlot Wine&amp;Dine, Bəşir Səfəroğlu 161, Bakı"
+          src="https://maps.google.com/maps?q=40.3742882,49.8362515(Merlot%20Wine%26Dine)&amp;z=17&amp;hl=en&amp;output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <a class="brand" href="#top" aria-label="Merlot Wine&amp;Dine">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 3h11l-1.1 7.2a4.5 4.5 0 0 1-8.8 0z" fill="currentColor"/><path d="M12 14.5V20M8.6 20.5h6.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">Merlot</span>
+        <span class="brand__sub">Wine &amp; Dine</span>
+      </span>
+    </a>
+    <p class="foot__line">{{foot.tag}}<br><span class="foot__note">{{foot.note}}</span></p>
+    <div class="foot__links">
+      <a href="tel:+994512444991">051 244 49 91</a>
+      <a href="#kitchen">{{nav.kitchen}}</a>
+      <a href="https://www.instagram.com/merlot_winedine_/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://maps.google.com/?cid=10680266729376901899" target="_blank" rel="noopener">Google Maps</a>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" id="callbar" aria-hidden="true">
+  <a class="btn btn--primary callbar__main" href="tel:+994512444991" tabindex="-1">
+    <i class="ph-light ph-phone-call" aria-hidden="true"></i>
+    <span>{{cta.reserve}}</span>
+  </a>
+  <a class="callbar__side" href="https://www.instagram.com/merlot_winedine_/"
+     target="_blank" rel="noopener" tabindex="-1" aria-label="{{cta.insta}}">
+    <i class="ph-light ph-instagram-logo" aria-hidden="true"></i>
+  </a>
+  <a class="callbar__side" href="https://www.google.com/maps/dir/?api=1&amp;destination=Merlot%20Wine%26Dine%2C%20B%C9%99%C5%9Fir%20S%C9%99f%C9%99ro%C4%9Flu%20161%2C%20Baku"
+     target="_blank" rel="noopener" tabindex="-1" aria-label="{{cta.route}}">
+    <i class="ph-light ph-navigation-arrow" aria-hidden="true"></i>
+  </a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Merlot Wine&Dine",
+  "servesCuisine": ["European", "Azerbaijani"],
+  "priceRange": "10-20 AZN",
+  "currenciesAccepted": "AZN",
+  "telephone": "+994512444991",
+  "url": "{{CANONICAL}}",
+  "image": "{{SITE}}/images/hero.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bəşir Səfəroğlu küçəsi 161",
+    "addressLocality": "Bakı",
+    "addressCountry": "AZ"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 40.3742882, "longitude": 49.8362515 },
+  "hasMap": "https://maps.google.com/?cid=10680266729376901899",
+  "acceptsReservations": "True",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:00", "closes": "00:00" }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/merlot_winedine_/"
+  ]
+}
+</script>
+
+<script src="{{A}}script.js"></script>
+</body>
+</html>

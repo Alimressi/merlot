@@ -1,0 +1,69 @@
+{
+ "_note": "price необязателен. Уберите поле или поставьте null — цена не выведется.",
+ "items": [
+  {
+   "img": "dish-plate",
+   "price": null,
+   "az": {
+    "n": "Pendir və ət tabağı",
+    "d": "Pendir çeşidi, dilimlənmiş ət, iki sous"
+   },
+   "ru": {
+    "n": "Сырно-мясная тарелка",
+    "d": "Ассорти сыров, мясная нарезка, два соуса"
+   },
+   "en": {
+    "n": "Cheese and meat plate",
+    "d": "Assorted cheeses, cold cuts, two sauces"
+   }
+  },
+  {
+   "img": "dish-medallions",
+   "price": null,
+   "az": {
+    "n": "Mal əti medalyonları",
+    "d": "Şərab-albalı sousu, kartof dilimləri, göyərti"
+   },
+   "ru": {
+    "n": "Медальоны из говядины",
+    "d": "Винно-вишнёвый соус, картофель по-деревенски, зелень"
+   },
+   "en": {
+    "n": "Beef medallions",
+    "d": "Wine and cherry sauce, potato wedges, greens"
+   }
+  },
+  {
+   "img": "dish-salmon",
+   "price": null,
+   "az": {
+    "n": "Qrildə qızıl balıq",
+    "d": "Ədviyyatlı düyü, limon, çeri pomidor"
+   },
+   "ru": {
+    "n": "Лосось на гриле",
+    "d": "Рис со специями, лимон, черри"
+   },
+   "en": {
+    "n": "Grilled salmon",
+    "d": "Spiced rice, lemon, cherry tomatoes"
+   }
+  },
+  {
+   "img": "dish-salad",
+   "price": null,
+   "az": {
+    "n": "Xırtıldayan salat",
+    "d": "Yaşıl salat, çeri pomidor, reyhan, küncüt"
+   },
+   "ru": {
+    "n": "Салат с хрустящей корочкой",
+    "d": "Зелёный салат, черри, базилик, кунжут"
+   },
+   "en": {
+    "n": "Crispy salad",
+    "d": "Green leaves, cherry tomatoes, basil, sesame"
+   }
+  }
+ ]
+}
