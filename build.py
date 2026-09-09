@@ -84,8 +84,8 @@ def peek_block(menu, lang, asset_prefix):
             price = f'\n          <p class="dish__price">{price_text(item["price"], lang)}</p>'
         cards.append(
             f"""        <article class="dish reveal">
-          <figure class="dish__shot shot" data-ph="images/{item['img']}.jpg">
-            <img src="{asset_prefix}images/{item['img']}.jpg" alt="{e(t['n'])}"
+          <figure class="dish__shot shot" data-ph="images/{item['img']}.webp">
+            <img src="{asset_prefix}images/{item['img']}.webp" alt="{e(t['n'])}"
                  loading="lazy" decoding="async" width="512" height="640">
             <span class="dish__no">{n:02d}</span>
           </figure>

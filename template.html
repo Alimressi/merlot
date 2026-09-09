@@ -7,10 +7,10 @@
 <meta name="description" content="{{doc.desc}}">
 <link rel="canonical" href="{{CANONICAL}}">
 {{HREFLANG}}
-<meta name="theme-color" content="#0d0a0b">
+<meta name="theme-color" content="#080708">
 <meta name="format-detection" content="telephone=yes">
 <meta name="mobile-web-app-capable" content="yes">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d0a0b'/%3E%3Cpath d='M22 14h20l-2 12a8 8 0 0 1-16 0z' fill='%23a51e35'/%3E%3Cpath d='M32 34v12M24 47h16' stroke='%23e8dfd2' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080708'/%3E%3Cpath d='M22 14h20l-2 12a8 8 0 0 1-16 0z' fill='%23a51e35'/%3E%3Cpath d='M32 34v12M24 47h16' stroke='%23e8dfd2' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
 
 <meta property="og:type" content="restaurant">
 <meta property="og:title" content="{{doc.title}}">
@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
 <script>document.documentElement.classList.add('js');</script>
@@ -92,8 +92,8 @@
   <!-- HERO. Все снимки заведения тёмные, поэтому тема сайта тоже тёмная:
        на чёрном фоне фотографии светятся, а не выглядят вырезанными. -->
   <section class="hero" id="top">
-    <figure class="hero__media shot" data-ph="images/hero.jpg">
-      <img src="{{A}}images/hero.jpg" alt="{{alt.hero}}" loading="eager" fetchpriority="high" decoding="async" width="1080" height="1080">
+    <figure class="hero__media shot" data-ph="images/hero.webp">
+      <img src="{{A}}images/hero.webp" alt="{{alt.hero}}" loading="eager" fetchpriority="high" decoding="async" width="1080" height="1080">
     </figure>
 
     <div class="hero__inner">
@@ -150,12 +150,12 @@
       </div>
 
       <div class="about__media reveal">
-        <figure class="about__shot shot" data-ph="images/room.jpg">
-          <img src="{{A}}images/room.jpg" alt="{{alt.room}}" loading="lazy" decoding="async" width="1080" height="810">
+        <figure class="about__shot shot" data-ph="images/room.webp">
+          <img src="{{A}}images/room.webp" alt="{{alt.room}}" loading="lazy" decoding="async" width="1080" height="810">
           <figcaption class="shot__cap shot__cap--top">{{about.cap1}}</figcaption>
         </figure>
-        <figure class="about__shot about__shot--small shot" data-ph="images/arch.jpg">
-          <img src="{{A}}images/arch.jpg" alt="{{alt.arch}}" loading="lazy" decoding="async" width="900" height="1200">
+        <figure class="about__shot about__shot--small shot" data-ph="images/arch.webp">
+          <img src="{{A}}images/arch.webp" alt="{{alt.arch}}" loading="lazy" decoding="async" width="900" height="1200">
           <figcaption class="shot__cap">{{about.cap2}}</figcaption>
         </figure>
       </div>
@@ -165,8 +165,8 @@
   <!-- WINE -->
   <section class="wine" id="wine">
     <div class="wrap wine__grid">
-      <figure class="wine__shot shot reveal" data-ph="images/wine.jpg">
-        <img src="{{A}}images/wine.jpg" alt="{{alt.wine}}" loading="lazy" decoding="async" width="512" height="640">
+      <figure class="wine__shot shot reveal" data-ph="images/wine.webp">
+        <img src="{{A}}images/wine.webp" alt="{{alt.wine}}" loading="lazy" decoding="async" width="512" height="640">
         <figcaption class="shot__cap">{{wine.cap}}</figcaption>
       </figure>
 
@@ -227,16 +227,16 @@
       </div>
 
       <div class="strip">
-        <figure class="strip__shot shot reveal" data-ph="images/music.jpg">
-          <img src="{{A}}images/music.jpg" alt="{{alt.music}}" loading="lazy" decoding="async" width="360" height="640">
+        <figure class="strip__shot shot reveal" data-ph="images/music.webp">
+          <img src="{{A}}images/music.webp" alt="{{alt.music}}" loading="lazy" decoding="async" width="360" height="640">
           <figcaption class="shot__cap">{{eve.cap1}}</figcaption>
         </figure>
-        <figure class="strip__shot shot reveal" data-ph="images/bar.jpg">
-          <img src="{{A}}images/bar.jpg" alt="{{alt.bar}}" loading="lazy" decoding="async" width="360" height="640">
+        <figure class="strip__shot shot reveal" data-ph="images/bar.webp">
+          <img src="{{A}}images/bar.webp" alt="{{alt.bar}}" loading="lazy" decoding="async" width="360" height="640">
           <figcaption class="shot__cap">{{eve.cap2}}</figcaption>
         </figure>
-        <figure class="strip__shot shot reveal" data-ph="images/chef.jpg">
-          <img src="{{A}}images/chef.jpg" alt="{{alt.chef}}" loading="lazy" decoding="async" width="512" height="640">
+        <figure class="strip__shot shot reveal" data-ph="images/chef.webp">
+          <img src="{{A}}images/chef.webp" alt="{{alt.chef}}" loading="lazy" decoding="async" width="512" height="640">
           <figcaption class="shot__cap">{{eve.cap3}}</figcaption>
         </figure>
       </div>
@@ -304,15 +304,15 @@
         <dl class="info">
           <div class="info__row">
             <dt><i class="ph-light ph-clock" aria-hidden="true"></i><span>{{visit.hoursLbl}}</span></dt>
-            <dd>{{visit.hoursVal}} · 08:00 – 00:00</dd>
+            <dd class="info__val">{{visit.hoursVal}} · 08:00 – 00:00</dd>
           </div>
           <div class="info__row">
             <dt><i class="ph-light ph-phone" aria-hidden="true"></i><span>{{visit.phoneLbl}}</span></dt>
-            <dd><a href="tel:+994512444991">051 244 49 91</a></dd>
+            <dd class="info__val"><a href="tel:+994512444991">051 244 49 91</a></dd>
           </div>
           <div class="info__row">
             <dt><i class="ph-light ph-phone-call" aria-hidden="true"></i><span>{{visit.phone2Lbl}}</span></dt>
-            <dd><a href="tel:+994123101576">012 310 15 76</a></dd>
+            <dd class="info__val"><a href="tel:+994123101576">012 310 15 76</a></dd>
           </div>
           <div class="info__row">
             <dt><i class="ph-light ph-map-pin" aria-hidden="true"></i><span>{{visit.addrLbl}}</span></dt>
@@ -320,7 +320,7 @@
           </div>
           <div class="info__row">
             <dt><i class="ph-light ph-wine" aria-hidden="true"></i><span>{{visit.checkLbl}}</span></dt>
-            <dd>{{visit.checkVal}}</dd>
+            <dd class="info__val">{{visit.checkVal}}</dd>
           </div>
         </dl>
 
